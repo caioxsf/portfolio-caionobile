@@ -19,6 +19,12 @@
             <a href=""><img src="assets/img/icons8-instagram-48.png" alt=""></a>
             <a href=""><img src="assets/img/icons8-linkedin-48.png" alt=""></a>
         </div>
+
+        <div class="conteudo-botoes">
+            <a href="assets/img/Caio Nobile Silva Morgon.pdf" download class="botoes-d-c">Download CV</a>
+            <a href="#contato" class="botoes-d-c">Contato</a>
+
+        </div>
     </div>
 
     <div class="container-sobremim">
@@ -99,11 +105,10 @@
 
             <div class="empresas">
                 <h3>Vendedor Autônomo</h3>
-                <p>Cargoﾠﾠﾠ: ﾠResgatador de Codigos Free-Fire</p>
+                <p>Cargoﾠﾠﾠ: ﾠCodigos Free-Fire</p>
                 <p>Inicioﾠﾠﾠﾠ: ﾠ10/2020</p>
                 <p>Terminoﾠ: ﾠ06/2022</p>
             </div>
-
         </div>
     </div>
 
@@ -131,31 +136,34 @@
                 <h3>Sistema caminhão desktop</h3>
                 <a href=""><img src="assets/img/caminhao-desktop.png" alt=""></a>
             </div>
-
-
-            <a href="" class="btn-mostrarmais">Mostrar mais</a>
-
         </div>
+
+        <a href="https://github.com/caioxsf?tab=repositories" class="btn-mostrarmais">Mostrar mais</a>
     </div>
+
+    <p id="contato"></p>
 
     <div class="container-form">
         <h1 class="h1-contato">Entre em contato</h1>
 
         <div class="conteudo-form">
-            <form action="">
-                <label for="">E-mail</label>
-                <input type="text">
+            <form action="https://formsubmit.co/veigarnobile@gmail.com" method="POST">
+                <label for="Email">E-mail</label>
+                <input type="text" name="Email" required>
 
-                <label for="">Nome</label>
-                <input type="text">
+                <label for="Nome">Nome</label>
+                <input type="text" name="Nome" required>
 
-                <label for="">Assunto</label>
-                <input type="text">
+                <label for="Assunto">Assunto</label>
+                <input type="text" name="Assunto" required>
 
-                <label for="">Mensagem</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <label for="Mensagem">Mensagem</label>
+                <textarea name="Mensagem" cols="30" rows="10" required></textarea>
 
                 <input type="submit" class="btn-enviar">
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://localhost:5500/obrigado.html">
             </form>
         </div>
     </div>

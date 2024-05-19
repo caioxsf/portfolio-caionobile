@@ -67,8 +67,29 @@
 {
     display: flex;
     gap: 15px;
+}
+
+.botoes-d-c
+{
+    padding: 10px;
+    background-color: var(--cor-principal);
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.botoes-d-c:hover
+{
+    background-color: #1b4e99;
+}
+
+.conteudo-botoes
+{
+    margin-top: 25px;
     margin-bottom: 230px;
 }
+
 
 .imagens a
 {
@@ -188,12 +209,18 @@
     color: white;
     text-decoration: none;
     transition: 0.3s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    width: 50%;
 }
 
 .btn-mostrarmais:hover
 {
     background-color: #1b4e99;
 }
+
 
 /* ESTILIZAÇÃO DO SEXTO BLOCO (FORMULÁRIO) */
 
@@ -253,12 +280,167 @@ form
 footer p
 {
     margin-top: 50px;
-    background-color: rgba(71, 43, 175, 0.952);
+    background-color: rgba(51, 30, 124, 0.952);
     text-align: center;
     padding: 20px;
 }
 
-/* @media screen (max-width: 600px) {
-    
-} */
+/* APLICANDO RESPONSIVIDADE */
 
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .conteudo-projetos
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .conteudo-experiencia
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+} 
+
+@media only screen and (min-width: 800px) and (max-width: 1440px)
+{
+    /* SOBRE MIM */
+    .container-sobremim
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /* SKILLS */
+    .container-skills
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /* EXPERIENCIA */
+    .container-experiencia
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .conteudo-experiencia
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* PROJETOS */
+
+    .container-projetos
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .conteudo-projetos
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .projetos img
+    {
+        width: 290px;
+        height: 290px;
+    }
+
+    .projetos img
+    {
+        width: 280px;
+        height: 280px;
+    }
+
+    /* FORMULARIO */
+
+    .container-form
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 2500px)
+{
+    /* SOBRE MIM */
+    .container-sobremim
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    /* SKILLS */
+    .container-skills
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    /* EXPERIENCIA */
+    .container-experiencia
+    {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .conteudo-experiencia
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* PROJETOS */
+
+    .container-projetos
+    {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .conteudo-projetos
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .projetos img
+    {
+        width: 320px;
+        height: 320px;
+    }
+
+    /* FORMULARIO */
+
+    .container-form
+    {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+}
