@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #010409;
+
+    font-family: "Poppins", sans-serif;
+}
+
+:root
+{
+    --cor-principal: #3271D0;
+}
+
+/* ESTILIZAÇÃO DO PRIMEIRO BLOCO (FOTO, CAIO NOBILE, DEV, GIT ,INSTA E LINKEDIN */
+
+.container-introducao
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.container-introducao h1,p
+{
+    color: white;
+}
+
+.container-introducao p
+{
+    position: relative;
+    bottom: 10px;
+}
+
+.container-introducao h1
+{
+    font-size: 35px;
+}
+
+.img-caio
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin-bottom: 15px;
+    object-fit: cover;
+
+    /* BORDA AZUL DA IMAGEM */
+    border: 2px solid var(--cor-principal);
+    padding: 10px;
+
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.img-caio:hover
+{
+    transform: scale(1.04);
+}
+
+.imagens
+{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 230px;
+}
+
+.imagens a
+{
+    transition: 0.3s ease-in-out;
+}
+
+.imagens a:hover
+{
+    transform: scale(1.1);
+}
+
+/* ESTILIZAÇÃO DO SEGUNDO BLOCO (SOBRE MIM) */
+
+.h1-sobremim
+{
+    color: white;
+    margin: 20px;
+    border-bottom: 2px solid var(--cor-principal);
+}
+
+.conteudo-sobremim
+{
+    margin: 20px;
+    text-align: justify;
+}
+
+/* ESTILIZAÇÃO DO TERCEIRO BLOCO (SKILLS) */
+
+.h1-skills
+{
+    color: white;
+    margin: 20px;
+    border-bottom: 2px solid var(--cor-principal);
+}
+
+.conteudo-skills
+{
+    margin: 20px;
+}
+
+.progress
+{
+    background-color: #86666627;
+    border-radius: 8px;
+}
+
+/* ESTILIZAÇÃO DO QUARTO BLOCO (EXPERIENCIA PROFISSIONAL) */
+
+.h1-experiencia
+{
+    color: white;
+    border-bottom: 2px solid var(--cor-principal);
+    margin: 20px;
+}
+
+.empresas h3
+{
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.empresas p
+{
+    color: white;
+    margin-left: 20px;
+}
+
+/* ESTILIZAÇÃO QUINTO BLOCO (PROJETOS) */
+
+.h1-projetos
+{
+    margin: 20px;
+    color: white;
+    border-bottom: 2px solid var(--cor-principal);
+}
+
+.projetos img
+{
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    transition: 0.3s ease-in-out;
+}
+
+.projetos img:hover
+{
+    transform: scale(1.02);
+}
+
+.projetos h3
+{
+    margin-left: 20px;
+    color: white;
+}
+
+.conteudo-projetos
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-mostrarmais
+{
+    margin: 20px;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: var(--cor-principal);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-mostrarmais:hover
+{
+    background-color: #1b4e99;
+}
+
+/* ESTILIZAÇÃO DO SEXTO BLOCO (FORMULÁRIO) */
+
+.h1-contato
+{
+    color: white;
+    margin: 20px;
+    border-bottom: 2px solid var(--cor-principal);
+}
+
+
+form
+{
+    color: white;
+    margin: 20px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.conteudo-form input
+{
+    color: white;
+    border: 1px solid var(--cor-principal);
+    outline: none;
+    padding: 5px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+.conteudo-form textarea
+{
+    color: white;
+    border: 1px solid var(--cor-principal);
+    outline: none;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.btn-enviar
+{
+    margin-top: 20px;
+    background-color: var(--cor-principal);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-enviar:hover
+{
+    background-color: #1b4e99;
+}
+
+
+/* FOOTER */
+
+footer p
+{
+    margin-top: 50px;
+    background-color: rgba(71, 43, 175, 0.952);
+    text-align: center;
+    padding: 20px;
+}
+
+/* @media screen (max-width: 600px) {
+    
+} */
+
