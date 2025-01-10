@@ -192,24 +192,56 @@
 
 /* ESTILIZAÇÃO DO QUARTO BLOCO (EXPERIENCIA PROFISSIONAL) */
 
+
 .h1-experiencia
 {
     color: white;
-    border-bottom: 2px solid var(--cor-principal);
+    /* border-bottom: 2px solid var(--cor-principal); */
     margin: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.conteudo-experiencia {
+    justify-content: center;
+}
+
+.empresas {
+    background-color: #111314;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+    border-radius: 6px;
+    padding: 7px;
+    text-align: center;
+
+    width: 280px;
+    padding: 15px;
+}
+
+.empresas .cargo {
+    font-size: 13px;
+}
+
+.empresas .datas {
+    font-size: 12px;
 }
 
 .empresas h3
 {
     color: white;
-    margin-top: 20px;
-    margin-left: 20px;
+    /* margin-top: 20px; */
+    /* margin-left: 20px; */
+    background-color: transparent;
+    font-weight: 500;
 }
 
 .empresas p
 {
     color: white;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    background-color: transparent;
 }
 
 /* ESTILIZAÇÃO QUINTO BLOCO (PROJETOS) */
@@ -217,33 +249,44 @@
 .h1-projetos
 {
     margin: 20px;
+    margin-top: 50px;
     color: white;
-    border-bottom: 2px solid var(--cor-principal);
+    text-align: center;
+    /* border-bottom: 2px solid var(--cor-principal); */
 }
 
-.projetos img
-{
-    width: 320px;
-    height: 320px;
+.projetos {
+    width: 210px;
+    height: 300px;
+}
+
+.projetos img {
     object-fit: cover;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-
-    border-radius: 12px;
-
-    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+    width: 210px;
+    height: 210px;
 }
 
-.projetos img:hover
-{
-    transform: scale(1.02);
+.tecnologias {
+    margin-top: 5px;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.projetos h3
-{
-    margin-left: 20px;
+.itens-tecnologia span {
     color: white;
+    padding: 0;
+    background-color: #111314;
+    border-radius: 4px;
+}
+
+.itens-tecnologia i {
+    background-color: #111314;
+    padding: 5px; 
+    border-radius: 4px;   
 }
 
 .conteudo-projetos
@@ -251,14 +294,16 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
     align-items: center;
 }
 
 .btn-mostrarmais
 {
     margin: 20px;
-    padding: 12px;
-    border-radius: 12px;
+    padding: 8px;
+    border-radius: 5px;
     background-color: var(--cor-principal);
     color: white;
     text-decoration: none;
@@ -268,6 +313,7 @@
     justify-content: center;
     margin-left: 25%;
     width: 50%;
+    margin-top: 70px;
 }
 
 .btn-mostrarmais:hover
@@ -282,7 +328,9 @@
 {
     color: white;
     margin: 20px;
-    border-bottom: 2px solid var(--cor-principal);
+    /* border-bottom: 2px solid var(--cor-principal); */
+    margin-top: 50px;
+    text-align: center;
 }
 
 
@@ -299,10 +347,10 @@ form
 .conteudo-form input
 {
     color: white;
-    border: 1px solid var(--cor-principal);
+    border: none;
+    border-bottom: 1px solid var(--cor-principal);
     outline: none;
-    padding: 5px;
-    border-radius: 6px;
+    padding: 5px;   
     margin-bottom: 5px;
 }
 
@@ -317,9 +365,18 @@ form
 
 .btn-enviar
 {
-    margin-top: 20px;
+    margin: 20px;
+    padding: 8px;
+    border-radius: 5px;
     background-color: var(--cor-principal);
+    color: white;
+    text-decoration: none;
     transition: 0.3s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    width: 50%;
     cursor: pointer;
 }
 
@@ -334,14 +391,19 @@ form
 footer p
 {
     margin-top: 50px;
-    background-color: rgba(51, 30, 124, 0.952);
+    background-color: #111314;
     text-align: center;
-    padding: 20px;
+    padding: 12px;
 }
+
+.cv-phone {
+    display: none;
+}
+
 
 /* APLICANDO RESPONSIVIDADE */
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media  (max-width: 1024px) {
     .conteudo-projetos
     {
         display: flex;
@@ -356,7 +418,62 @@ footer p
         flex-wrap: wrap;
     }
 
-    
+
+    .projetos img
+    {
+        width: 210px;
+        height: 210px;
+    }
+
+    .container-skills {
+        margin: 10px;
+    }
+
+    .conteudo-sobremim {
+        text-align: justify;
+    }
+
+    .projetos {
+        margin-top: 20px;
+    }
+
+    .cv {
+        display: none;
+    }
+
+    .container-introducao {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        /* margin-top: 50px; */
+        z-index: 1;
+        
+        background-color: transparent;
+        position: relative;
+        left: 70px;
+        bottom: 80px;
+        white-space: nowrap;
+    }   
+
+    .container-introducao img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .icons {
+        margin-top: 15px;
+        margin-left: 32px;
+    }
+
+    .icons .cv-phone{
+        display: block;
+    }
+
+    .cv {
+        display: none;
+    }
+
 } 
 
 @media only screen and (min-width: 800px) and (max-width: 1440px)
@@ -410,17 +527,7 @@ footer p
         flex-wrap: wrap;
     }
 
-    .projetos img
-    {
-        width: 290px;
-        height: 290px;
-    }
-
-    .projetos img
-    {
-        width: 280px;
-        height: 280px;
-    }
+    
 
     /* FORMULARIO */
 
