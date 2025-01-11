@@ -366,7 +366,7 @@ form
 .btn-enviar
 {
     margin: 20px;
-    padding: 8px;
+    padding: 10px;
     border-radius: 5px;
     background-color: var(--cor-principal);
     color: white;
@@ -400,10 +400,14 @@ footer p
     display: none;
 }
 
+.container-introducao-responsive {
+    display: none;
+}
+
 
 /* APLICANDO RESPONSIVIDADE */
 
-@media  (max-width: 1024px) {
+@media  (max-width: 1104px) {
     .conteudo-projetos
     {
         display: flex;
@@ -431,6 +435,7 @@ footer p
 
     .conteudo-sobremim {
         text-align: justify;
+
     }
 
     .projetos {
@@ -442,18 +447,18 @@ footer p
     }
 
     .container-introducao {
-        display: flex;
+        /* display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        /* margin-top: 50px; */
         z-index: 1;
         
         background-color: transparent;
         position: relative;
         left: 70px;
         bottom: 80px;
-        white-space: nowrap;
+        white-space: nowrap; */
+        display: none;
     }   
 
     .container-introducao img {
@@ -466,12 +471,56 @@ footer p
         margin-left: 32px;
     }
 
-    .icons .cv-phone{
-        display: block;
+
+    .container-introducao-responsive {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        position: relative;
+        
+        align-items: center;
+        bottom: 105px;
+        gap: 14px;
+        background-color: transparent;
+        
     }
 
-    .cv {
-        display: none;
+    .container-titulo-responsive {
+        text-align: center;
+        color: white;
+        background-color: transparent;
+    }
+    
+    .icons-responsive {
+        font-size: 25px;
+    }
+
+    .icons-responsive a {
+        margin-inline: 8px;
+    }
+
+    .icons-responsive {
+        padding-inline: 50px;
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .cv-phone {
+        display: flex;
+        position: relative;
+        top: 2px;
+        background-color: transparent;
+    }
+
+    .cv-phone i {
+        font-size: 25px;
+        position: relative;
+        top: 5px;
+        background-color: transparent;
+        margin-left: 5px;
     }
 
 } 
@@ -592,8 +641,8 @@ footer p
 
     .projetos img
     {
-        width: 320px;
-        height: 320px;
+        width: 210px;
+        height: 210px;
     }
 
     /* FORMULARIO */
